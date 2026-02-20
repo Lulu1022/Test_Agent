@@ -697,6 +697,25 @@
         padding: 24px 12px 40px;
       }
 
+      /* 手機版：OpenSpec 流程改直排，箭頭向下 */
+      .flow-diagram-wrap {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 16px;
+      }
+      .flow-step {
+        flex: none;
+        min-height: auto;
+        width: 100%;
+      }
+      .flow-arrow {
+        display: flex;
+        justify-content: center;
+        transform: rotate(90deg);
+        padding: 4px 0;
+      }
+
       .workflow-sidebar {
         padding: 20px;
       }
