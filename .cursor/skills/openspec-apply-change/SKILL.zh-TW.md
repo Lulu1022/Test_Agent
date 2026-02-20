@@ -56,6 +56,15 @@ metadata:
    - **spec-driven**：proposal、specs、design、tasks
    - 其他 schema：依 CLI 輸出的 contextFiles
 
+4.5. **讀取並遵守專案規範**
+
+   若專案根目錄有 **INSTRUCTIONS.md**（或其中所引用的專案規範檔），請讀取並在實作時**遵守其規範**，包含但不限於：
+   - 架構（例如三層：Controller / Service / Repository、目錄結構）
+   - API 設計（路由、HTTP 方法、狀態碼、請求/回應與錯誤格式）
+   - 例外處理（集中處理、自訂例外、錯誤 DTO、Logging）
+   - 資料庫與技術選型（例如 MySQL、EF Core）
+   實作不得與 INSTRUCTIONS.md 抵觸。
+
 5. **顯示目前進度**
 
    顯示：
@@ -141,6 +150,7 @@ metadata:
 **護欄**
 - 持續處理任務直到完成或受阻
 - 開始前一律讀取脈絡檔案（來自 apply 指示輸出）
+- 若存在 INSTRUCTIONS.md，須讀取並遵守其架構、API 設計與例外處理規範，不得與之抵觸
 - 任務不明確時先暫停詢問再實作
 - 實作發現問題時暫停並建議更新產物
 - 程式碼變更保持最小且限於各任務範圍

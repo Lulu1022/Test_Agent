@@ -1,0 +1,18 @@
+---
+description: 實作與開發時須遵守專案根目錄 INSTRUCTIONS.md 的架構、API 與例外處理規範
+alwaysApply: true
+---
+
+# 遵守 INSTRUCTIONS.md 專案規範
+
+在本專案中進行**實作、重構或新增 API/程式碼**時，必須遵守專案根目錄 **INSTRUCTIONS.md** 的規範。
+
+- **何時讀取**：開始寫程式或修改與架構/API/例外相關的程式碼前，請先讀取 `INSTRUCTIONS.md`（若存在）。
+- **須遵守的內容**：
+  - 架構與目錄：三層式架構、`Controller` / `Service` / `Repository` 資料夾與依賴方向。
+  - API 設計：路由與命名（6.1）、HTTP 方法與狀態碼（6.2–6.3）、請求/回應與錯誤格式（6.4–6.5）、Controller 實作要點（6.6）。
+  - 例外處理：分層職責、例外與 HTTP 對應、錯誤 DTO、Logging、集中處理與自訂例外之基本規範（6.7）。
+  - 技術選型：.NET 版本、資料庫（MySQL）、EF Core / Pomelo 等依 INSTRUCTIONS 說明為準。
+- **不得**：實作與 INSTRUCTIONS.md 所述架構、API 設計或例外處理規範相抵觸的程式碼。
+
+若任務或變更需求與 INSTRUCTIONS.md 衝突，應先與使用者確認要優先遵守規範或調整規範，再繼續實作。

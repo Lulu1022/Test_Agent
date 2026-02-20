@@ -50,6 +50,15 @@ Implement tasks from an OpenSpec change.
    - **spec-driven**: proposal, specs, design, tasks
    - Other schemas: follow the contextFiles from CLI output
 
+4.5. **Read and follow project conventions**
+
+   If the repository root contains **INSTRUCTIONS.md** (or a project convention file referenced in it), read it and **adhere to its conventions** during implementation. This includes but is not limited to:
+   - Architecture (e.g. three-layer: Controller / Service / Repository, folder layout)
+   - API design (routing, HTTP methods, status codes, request/response and error format)
+   - Exception handling (central handler, custom exceptions, error DTO, logging)
+   - Database and technology choices (e.g. MySQL, EF Core)
+   Do not implement in a way that contradicts INSTRUCTIONS.md.
+
 5. **Show current progress**
 
    Display:
@@ -135,6 +144,7 @@ What would you like to do?
 **Guardrails**
 - Keep going through tasks until done or blocked
 - Always read context files before starting (from the apply instructions output)
+- When INSTRUCTIONS.md exists, read it and follow its architecture, API design, and exception-handling conventions; do not contradict it
 - If task is ambiguous, pause and ask before implementing
 - If implementation reveals issues, pause and suggest artifact updates
 - Keep code changes minimal and scoped to each task
